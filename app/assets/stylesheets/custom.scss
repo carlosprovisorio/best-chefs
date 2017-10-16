@@ -65,7 +65,7 @@ h2 {
 }
 
 .gravatar {
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .well {
@@ -81,4 +81,15 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.show_recipe {
+ margin: 10px; 
 }
