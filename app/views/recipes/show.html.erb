@@ -1,8 +1,5 @@
-<h2>Show Recipe</h2>
+<%= render 'shared/page_title', title: @recipe.name %>
 
-<p>
-  <h5><%= @recipe.name %></h5>
-</p>
 <div class="row">
   <div class="col-md-4 pull-right center">
     <%= gravatar_for @recipe.chef, size: 200 %>
@@ -11,12 +8,13 @@
     </p>
   </div>
   <div class="col-md-8">
+    <%= link_to "Edit this Recipe", edit_recipe_path(@recipe), class: 'btn btn-success pull-right' %>
     <h3><%= @recipe.summary %></h3>
     <div class="well">
       <p>
         <strong>Steps:</strong>
       </p>
-      <%= @recipe.description %>
+      <%= simple_format(@recipe.description) %>
     </div>
   </div>
 </div>
