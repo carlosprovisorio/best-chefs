@@ -12,6 +12,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 
 group :development, :test do
   gem 'sqlite3'
