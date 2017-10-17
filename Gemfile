@@ -14,7 +14,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-
+gem 'bcrypt'
 
 group :development, :test do
   gem 'sqlite3'
