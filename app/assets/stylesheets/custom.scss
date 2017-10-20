@@ -37,7 +37,7 @@ body {
 }
 
 h1,h2,h3,h4 {
-  line-heigh: 1;
+  line-height: 1;
 }
 
 h1 {  
@@ -83,6 +83,10 @@ input, textarea, select, .uneditable-input {
   border-radius: 5px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.input_checkbox input {
+  width: auto !important;
 }
 
 input {
