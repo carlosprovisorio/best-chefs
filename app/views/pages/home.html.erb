@@ -23,14 +23,25 @@
 
 <section class="styles">
   <h1>Styles</h1>
-  <div class="styles-images">
-    <div>
-      <%= image_tag "sushi.svg", class: "style-button" %>
-      <%= link_to "Log In", login_path, class: "section2-button" %></p>
+  <div class="container-images">
+    <div class="first-line">
+      <div class="sushi-image">
+        <%= link_to "Japanese", login_path, class: "styles-button" %>
+      </div>
+    
+      <div class="vegeterian-image">
+       <%= link_to "Vegeterian", login_path, class: "styles-button" %>
+      </div>
     </div>
-    <%= image_tag "sushi.svg", class: "style-button" %>
-    <%= image_tag "pasta.svg", class: "style-button" %>
-    <%= image_tag "vegetarian.svg", class: "style-button" %>
-    <%= image_tag "more.svg", class: "style-button" %>
+    
+    <div class="second-line">
+      <div class="italian-image">
+        <%= link_to "Italian", login_path, class: "styles-button" %>
+      </div>
+    
+      <div class="more-image">
+        <%= link_to " &More", login_path, class: "styles-button" %>
+      </div>
+    </div>
   </div>
 </section>

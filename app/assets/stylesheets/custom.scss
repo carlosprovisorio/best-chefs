@@ -158,6 +158,82 @@
   max-width: 85%;
 }
 
+.container-images {
+  display: flex;
+  justify-content: center;
+}
+
+.sushi-image {
+  background-image: url('sushi.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 421px;
+  height: 281px;
+  padding: 0 7%;
+  margin: 30px;
+}
+
+.vegeterian-image {
+  background-image: url('vegetarian.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 421px;
+  height: 281px;
+  padding: 0 7%;
+  margin: 30px;
+}
+
+.italian-image {
+  background-image: url('pasta.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 421px;
+  height: 281px;
+  padding: 0 7%;
+  margin: 30px;
+}
+
+.more-image {
+  background-image: url('more.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 421px;
+  height: 281px;
+  padding: 0 7%;
+  margin: 30px;
+}
+
+.styles-button {
+  position: relative;
+  top: 160px;
+  left: 260px;
+  background-color: #C50B31;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  height: 110px;
+  width: 110px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #C50B31;
+  padding: 10px 100px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
 //Old Navbar
 // #logo {
 //   margin-top: 10px;
@@ -221,11 +297,11 @@ h2 {
   letter-spacing: .5px;
 }
 
-.footer {
-  margin-top: 25px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-}
+// .footer {
+//   margin-top: 25px;
+//   border-top: 1px solid #eaeaea;
+//   color: #777;
+// }
 
 .styles {
   margin: 100px 0px;
@@ -234,25 +310,15 @@ h2 {
   color: #C50B31;
 }
 
-.styles-images {
-  max-width: 100%;
-  text-align: center;
-  img {
-    margin: 30px 50px;
-  }
-}
-
-// .style-button {
-// 	background-color: #C50B31;
-// 	border: none;
-//   border-radius: 4px;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   color: #ffffff;
-//   display: inline-block;
-//   font-size: 18px;
-//   padding: 10px 30px;
+// .styles-images {
+//   max-width: 100%;
 //   text-align: center;
+//   img {
+//     margin: 30px 50px;
+//   }
 // }
+
+// 
 
 
 .chef_info {
