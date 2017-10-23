@@ -16,3 +16,11 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+ body, html {
+  margin: 0;
+  //font-family: 'Righteous', cursive;
+  //font-family: 'Raleway', sans-serif;
+}

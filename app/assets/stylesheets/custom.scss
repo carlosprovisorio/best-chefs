@@ -1,36 +1,197 @@
-#logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: left;
-  margin-right: 10px;
-  font-size: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+// New Navbar
+.navbar-custom {
+  background-color: #C50B31;
+  padding: 40px 100px;
 }
 
-#logo:hover {
-  color: white;
+.navbar-custom .navbar-nav > li > a {
+  color:#fff;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
   text-decoration: none;
+  background-color: #997C41;
 }
 
-body {
-  padding-top: 80px;
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding-top: 25px !important;;
+    img {
+      display: inline-block !important;
+    }
+  }
+
+.custom-container {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+ 
+  .navbar-custom .navbar-toggle {
+    background-color:#ffffff;
+  }
+  .navbar-custom .icon-bar {
+    background-color: #C50B31;
+  }
+  
+  .navbar-toggle {
+    z-index:1;
+  }
+  
+  .navbar-brand {
+    position: absolute;
+    width: 70%;
+  }
+  .custom-container {
+    font-size: 15px;
+  }
+  
 }
 
-.nav_item {
-  margin-left: 25px;
-  float: left;
-  margin-top: 20px;
+// HERO SECTION
+
+.hero-image {
+  background-image: url('hero.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 90vh;
 }
 
-.nav_ul_item {
-  padding-left: 25px;
-  float: left;
-  margin-top: 20px;
+.hero-image__copy {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  color: white;
+  .title {
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+  }
+  .subtitle {
+    font-size: 37px;
+    text-align: left;
+  }
 }
+
+.hero-image__button {
+    background-color: #997C41;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    display: inline-block;
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    padding: 15px 80px;
+    text-align: center;
+  }
+
+
+//ENTER GUEST OR SIGN UP
+
+.block-cards {
+  margin-top: 40px;  
+}
+
+.guest-image {
+  background-image: url('pancakes.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 446px;
+  height: 338px;
+  padding: 0 7%;
+}
+
+.user-image {
+  background-image: url('pizza.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 446px;
+  height: 338px;
+  padding: 0 7%;
+}
+.section2 {
+  margin-top: 5%;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+}
+
+.midrow {
+  font-size: 23px;
+  color: #997C41;
+}
+
+.section2-button {
+  background-color: #997C41;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.left {
+  font-size: 18px;
+  max-width: 85%;
+}
+
+//Old Navbar
+// #logo {
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   float: left;
+//   margin-right: 10px;
+//   font-size: 2em;
+//   color: #fff;
+//   text-transform: uppercase;
+//   letter-spacing: -1px;
+//   padding-top: 9px;
+//   font-weight: bold;
+// }
+
+// #logo:hover {
+//   color: white;
+//   text-decoration: none;
+// }
+
+// body {
+//   //padding-top: 80px;
+// }
+
+// .nav_item {
+//   margin-left: 25px;
+//   float: left;
+//   margin-top: 20px;
+// }
+
+// .nav_ul_item {
+//   padding-left: 25px;
+//   float: left;
+//   margin-top: 20px;
+// }
 
 .center {
   text-align: center;
@@ -65,6 +226,34 @@ h2 {
   border-top: 1px solid #eaeaea;
   color: #777;
 }
+
+.styles {
+  margin: 100px 0px;
+  border-top: 1px solid #997C41;
+  font-family: 'Raleway', sans-serif;
+  color: #C50B31;
+}
+
+.styles-images {
+  max-width: 100%;
+  text-align: center;
+  img {
+    margin: 30px 50px;
+  }
+}
+
+// .style-button {
+// 	background-color: #C50B31;
+// 	border: none;
+//   border-radius: 4px;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   color: #ffffff;
+//   display: inline-block;
+//   font-size: 18px;
+//   padding: 10px 30px;
+//   text-align: center;
+// }
+
 
 .chef_info {
   margin-top: 10px;
@@ -101,5 +290,5 @@ span.picture {
 }
 
 .show_recipe {
- margin: 10px; 
+  margin: 10px; 
 }
