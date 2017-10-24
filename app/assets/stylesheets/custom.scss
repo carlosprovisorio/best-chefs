@@ -43,7 +43,7 @@ a:hover {
 $hero-height: 75vh;
 
 .hero-image {
-  background: url('hero.svg') 70%;
+  background: url('https://s3.amazonaws.com/bestchefsrecipes/static/hero.jpg') 70%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -90,7 +90,7 @@ $hero-height: 75vh;
 }
 
 .guest-image {
-  background-image: url('pancakes.svg');
+  background-image: url('https://s3.amazonaws.com/bestchefsrecipes/static/pancakes.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 446px;
@@ -99,7 +99,7 @@ $hero-height: 75vh;
 }
 
 .user-image {
-  background-image: url('pizza.svg');
+  background-image: url('https://s3.amazonaws.com/bestchefsrecipes/static/pizza.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 446px;
@@ -158,7 +158,7 @@ $hero-height: 75vh;
 }
 
 .sushi-image {
-  background-image: url('sushi.svg');
+  background-image: url('https://s3.amazonaws.com/bestchefsrecipes/static/sushi.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 421px;
@@ -168,7 +168,7 @@ $hero-height: 75vh;
 }
 
 .vegeterian-image {
-  background-image: url('vegetarian.svg');
+  background-image: url('https://s3.amazonaws.com/bestchefsrecipes/static/avocado.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 421px;
@@ -178,7 +178,7 @@ $hero-height: 75vh;
 }
 
 .italian-image {
-  background-image: url('pasta.svg');
+  background-image: url('https://s3.amazonaws.com/bestchefsrecipes/static/pasta.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 421px;
@@ -188,7 +188,7 @@ $hero-height: 75vh;
 }
 
 .more-image {
-  background-image: url('more.svg');
+  background-image: url('https://s3.amazonaws.com/bestchefsrecipes/static/%26more.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 421px;
