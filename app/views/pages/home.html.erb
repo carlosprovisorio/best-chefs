@@ -1,5 +1,5 @@
-<section class="row section2">
-  <div class="col-lg-5 col-lg-offset-1">
+<section class="users">
+  <div class="guest">
     <h3 class="midrow">View Recipes as Guest User</h3>
     <div class="guest-image">
       <div class="copyright">
@@ -7,10 +7,8 @@
         <p><%= link_to "See Recipes", recipes_path, class: "section2-button" %></p>
       </div>
     </div>
-    
   </div>
-  
-  <div class="col-lg-5 col-lg-offset-1">
+  <div class="account">
     <h3 class="midrow">Sign in to your account</h3>
     <div class="user-image">
       <div class="copyright">
@@ -28,17 +26,14 @@
       <div class="sushi-image">
         <%= link_to "Japanese", login_path, class: "styles-button" %>
       </div>
-    
       <div class="vegeterian-image">
        <%= link_to "Vegeterian", login_path, class: "styles-button" %>
       </div>
     </div>
-    
     <div class="second-line">
       <div class="italian-image">
         <%= link_to "Italian", login_path, class: "styles-button" %>
       </div>
-    
       <div class="more-image">
         <%= link_to " &More", login_path, class: "styles-button" %>
       </div>

@@ -10,26 +10,89 @@
       </button>
       
     </div>
-    <a class="navbar-brand logo"><%= image_tag "logo.svg" %></a>
+    <div class="navbar-brand logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.svg" %>
+      <% end %>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Styles</a></li>
-        <li><a href="#">Ingredients</a></li>
+        <li><%= link_to "Recipes", recipes_path %></li>
+        
+        <li>
+          <%= link_to '#', class: "dropdown-toggle", "data-toggle" => "dropdown" do %>
+            Styles <b class="caret"></b>
+          <% end %>
+          <ul class="dropdown-menu">
+            <% Style.all.each do |style| %>
+              <li><%= link_to style.name, style_path(style) %></li>
+            <% end %>
+            <% if logged_in? %>
+              <li class="divider"></li>
+              <li>
+                <%= link_to(new_style_path) do %>
+                  New style
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+        
+        <li>
+        <%= link_to '#', class: "dropdown-toggle", "data-toggle" => "dropdown" do %>
+          Ingredients <b class="caret"></b>
+          <% end %>
+          <ul class="dropdown-menu">
+            <% Ingredient.all.each do |ingredient| %>
+              <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+            <% end %>
+            <% if logged_in? %>
+              <li class='divider'></li>
+              <li>
+                <%= link_to(new_ingredient_path) do %>
+                  New Ingredient
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
       </ul>
+      
+      <% if logged_in? %>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Log In</a></li>
+        <li class="dropdown">
+          <%= link_to '#', class: "dropdown-toggle", "data-toggle" => "dropdown" do %>
+            <%= current_user.name %> <b class="caret"></b>
+          <% end %>
+          <ul class="dropdown-menu">
+            <li><%= link_to "View Profile", chef_path(current_user) %></li>
+            <li><%= link_to "Edit Profile", edit_chef_path(current_user) %></li>
+            <li class="divider"></li>
+            <li><%= link_to "Logout", logout_path %></li>
+          </ul>
+        </li>
       </ul>
+      
+      <div class="nav navbar-nav navbar-right">
+        <li><%= link_to "New Recipe", new_recipe_path %></li>
+      </div>
+      
+    <% else %>
+        <div class="nav navbar-nav navbar-right">
+          <li><%= link_to "Log in", login_path %></li>
+        </div>
+    <% end %>
+    
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 <section class="hero-image">
   <div class="hero-image__copy">
     <h1 class="title">Welcome to BestChefs</h1>
     <h2 class= "subtitle">where your food dreams</br>will come true.</h2>
-    <%= link_to "Sign Up Now!", '#', class: 'hero-image__button'%>
+    <%= link_to "Sign Up Now!", register_path, class: 'hero-image__button'%>
   </div>
 </section>
